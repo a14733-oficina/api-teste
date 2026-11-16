@@ -1,0 +1,14 @@
+meta {
+  name: Eliminar tarefa
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/tarefas/1
+  auth: bearer
+}
+
+auth:bearer {
+  token: COLOCAR_TOKEN_AQUI
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Criar tarefa
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:5000/tarefas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: COLOCAR_TOKEN_AQUI
+}
+
+body:json {
+  {
+    "titulo": "Preparar relatório",
+    "descricao": "Concluir o relatório mensal.",
+    "estado": "Pendente"
+  }
+}
